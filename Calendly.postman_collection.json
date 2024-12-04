@@ -1,0 +1,715 @@
+{
+	"info": {
+		"_postman_id": "6b0239bb-a5ef-4a3d-83d2-af70cc21a384",
+		"name": "Calendly",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34068577",
+		"_collection_link": "https://www.postman.com/crm-2024/workspace/crm-workspace/collection/34068577-6b0239bb-a5ef-4a3d-83d2-af70cc21a384?action=share&source=collection_link&creator=34068577"
+	},
+	"item": [
+		{
+			"name": "Get organization and user URI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.calendly.com/users/me",
+					"protocol": "https",
+					"host": [
+						"api",
+						"calendly",
+						"com"
+					],
+					"path": [
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Emovur organization and user URI",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.calendly.com/users/me",
+							"protocol": "https",
+							"host": [
+								"api",
+								"calendly",
+								"com"
+							],
+							"path": [
+								"users",
+								"me"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Sep 2024 06:35:07 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "ETag"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "GET, POST, PATCH, PUT, DELETE, OPTIONS, HEAD"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "*,x-requested-with,Content-Type,Accept,If-Modified-Since,If-None-Match,X-Token,Authorization"
+						},
+						{
+							"key": "access-control-max-age",
+							"value": "86400"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"74b6b380920f28bc7884d60e631c77c2\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "e9498e7a-2d0f-4dfb-acbc-cdc89ef963ee"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.113299"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "x-envoy-upstream-service-time",
+							"value": "115"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "9"
+						},
+						{
+							"key": "x-ratelimit-reset",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "10"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=pnVI4MHvO5c4iRrX54SWUkqft8LhCzs6To61lovsZu0-1726122907-1.0.1.1-Kp22QhHAeZsdidi09YRziu9eO.Za2_yXJ28eirnqYQ26SG0ShiKjaRS5f3zDldGOtQVhtYnBiLquIYiaKotZiA; path=/; expires=Thu, 12-Sep-24 07:05:07 GMT; domain=.calendly.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=VniSlwImLJtqrNBoja5D3vJb9RFv2zuTb.dSL7MyMnc-1726122907418-0.0.1.1-604800000; path=/; domain=.calendly.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "8c1de028ea43c177-BLR"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"resource\": {\n        \"avatar_url\": null,\n        \"created_at\": \"2024-02-14T06:57:48.919552Z\",\n        \"current_organization\": \"https://api.calendly.com/organizations/b2ef9257-b776-4d27-a689-f210194c41b6\",\n        \"email\": \"whatsapp@emovur.com\",\n        \"name\": \"Emovur WhatsApp\",\n        \"resource_type\": \"User\",\n        \"scheduling_url\": \"https://calendly.com/emovur-whatsapp\",\n        \"slug\": \"emovur-whatsapp\",\n        \"timezone\": \"Asia/Calcutta\",\n        \"updated_at\": \"2024-09-12T06:02:53.797515Z\",\n        \"uri\": \"https://api.calendly.com/users/fd516150-d2e4-4fb7-a725-dea96cc87b25\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Webhook Subscription",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{vault:authorization-secret}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"url\": \"https://leads.pointofconnect.com/api/leads/calendly/68292d83-9458-4fa9-8440-8092e0a766ec\",\n  \"events\": [\n    \"invitee.created\"\n  ],\n  \"organization\": \"https://api.calendly.com/organizations/b2ef9257-b776-4d27-a689-f210194c41b6\",\n  \"user\": \"https://api.calendly.com/users/fd516150-d2e4-4fb7-a725-dea96cc87b25\",\n  \"scope\": \"organization\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.calendly.com/webhook_subscriptions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"calendly",
+						"com"
+					],
+					"path": [
+						"webhook_subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Webhook Subscriptions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.calendly.com/webhook_subscriptions?scope=organization&organization=https://api.calendly.com/organizations/b2ef9257-b776-4d27-a689-f210194c41b6",
+					"protocol": "https",
+					"host": [
+						"api",
+						"calendly",
+						"com"
+					],
+					"path": [
+						"webhook_subscriptions"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "organization"
+						},
+						{
+							"key": "organization",
+							"value": "https://api.calendly.com/organizations/b2ef9257-b776-4d27-a689-f210194c41b6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get sample webhook data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.calendly.com/sample_webhook_data?scope=organization&organization=https://api.calendly.com/organizations/b2ef9257-b776-4d27-a689-f210194c41b6&event=invitee.created",
+					"protocol": "https",
+					"host": [
+						"api",
+						"calendly",
+						"com"
+					],
+					"path": [
+						"sample_webhook_data"
+					],
+					"query": [
+						{
+							"key": "scope",
+							"value": "organization"
+						},
+						{
+							"key": "organization",
+							"value": "https://api.calendly.com/organizations/b2ef9257-b776-4d27-a689-f210194c41b6"
+						},
+						{
+							"key": "event",
+							"value": "invitee.created"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sample webhook data - invitee.created",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.calendly.com/sample_webhook_data?scope=organization&organization=https://api.calendly.com/organizations/b2ef9257-b776-4d27-a689-f210194c41b6&event=invitee.created",
+							"protocol": "https",
+							"host": [
+								"api",
+								"calendly",
+								"com"
+							],
+							"path": [
+								"sample_webhook_data"
+							],
+							"query": [
+								{
+									"key": "scope",
+									"value": "organization"
+								},
+								{
+									"key": "organization",
+									"value": "https://api.calendly.com/organizations/b2ef9257-b776-4d27-a689-f210194c41b6"
+								},
+								{
+									"key": "event",
+									"value": "invitee.created"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Sep 2024 06:53:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "ETag"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "GET, POST, PATCH, PUT, DELETE, OPTIONS, HEAD"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "*,x-requested-with,Content-Type,Accept,If-Modified-Since,If-None-Match,X-Token,Authorization"
+						},
+						{
+							"key": "access-control-max-age",
+							"value": "86400"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"9162e376b190bd62350d7bfd53b82d26\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "efbe0a0c-eb28-4a35-83c2-2a85f13ee290"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.302437"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "x-envoy-upstream-service-time",
+							"value": "305"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "499"
+						},
+						{
+							"key": "x-ratelimit-reset",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "500"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "8c1dfb411a781d1c-BLR"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"created_at\": \"2024-09-12T06:53:37.248542Z\",\n    \"created_by\": \"https://api.calendly.com/users/fd516150-d2e4-4fb7-a725-dea96cc87b25\",\n    \"event\": \"invitee.created\",\n    \"payload\": {\n        \"cancel_url\": \"https://calendly.com/cancellations/a5f6eeda-c65b-47fd-b370-56f5eef2a716\",\n        \"created_at\": \"2024-09-12T06:45:58.123593Z\",\n        \"email\": \"mdtouseef702@gmail.com\",\n        \"event\": \"https://api.calendly.com/scheduled_events/da471188-36f6-4b2e-ad87-52d566505c14\",\n        \"first_name\": null,\n        \"invitee_scheduled_by\": null,\n        \"last_name\": null,\n        \"name\": \"Touseef\",\n        \"new_invitee\": null,\n        \"no_show\": null,\n        \"old_invitee\": null,\n        \"payment\": null,\n        \"questions_and_answers\": [\n            {\n                \"answer\": \"+91 79753 84759\",\n                \"position\": 0,\n                \"question\": \"Mobile Number\"\n            }\n        ],\n        \"reconfirmation\": null,\n        \"reschedule_url\": \"https://calendly.com/reschedulings/a5f6eeda-c65b-47fd-b370-56f5eef2a716\",\n        \"rescheduled\": false,\n        \"routing_form_submission\": null,\n        \"scheduled_event\": {\n            \"created_at\": \"2024-09-12T06:45:58.102851Z\",\n            \"end_time\": \"2024-09-12T09:30:00.000000Z\",\n            \"event_guests\": [],\n            \"event_memberships\": [\n                {\n                    \"user\": \"https://api.calendly.com/users/fd516150-d2e4-4fb7-a725-dea96cc87b25\",\n                    \"user_email\": \"whatsapp@emovur.com\",\n                    \"user_name\": \"Emovur WhatsApp\"\n                }\n            ],\n            \"event_type\": \"https://api.calendly.com/event_types/caa61121-e91f-4d47-b782-c40e93fce6ea\",\n            \"invitees_counter\": {\n                \"total\": 1,\n                \"active\": 1,\n                \"limit\": 1\n            },\n            \"location\": {\n                \"join_url\": \"https://calendly.com/events/da471188-36f6-4b2e-ad87-52d566505c14/google_meet\",\n                \"status\": \"pushed\",\n                \"type\": \"google_conference\"\n            },\n            \"meeting_notes_html\": null,\n            \"meeting_notes_plain\": null,\n            \"name\": \"One on One WhatsApp API Live demo\",\n            \"start_time\": \"2024-09-12T09:00:00.000000Z\",\n            \"status\": \"active\",\n            \"updated_at\": \"2024-09-12T06:46:00.032250Z\",\n            \"uri\": \"https://api.calendly.com/scheduled_events/da471188-36f6-4b2e-ad87-52d566505c14\"\n        },\n        \"scheduling_method\": null,\n        \"status\": \"active\",\n        \"text_reminder_number\": \"+91 79753 84759\",\n        \"timezone\": \"Asia/Calcutta\",\n        \"tracking\": {\n            \"utm_campaign\": null,\n            \"utm_source\": null,\n            \"utm_medium\": null,\n            \"utm_content\": null,\n            \"utm_term\": null,\n            \"salesforce_uuid\": null\n        },\n        \"updated_at\": \"2024-09-12T06:45:58.123593Z\",\n        \"uri\": \"https://api.calendly.com/scheduled_events/da471188-36f6-4b2e-ad87-52d566505c14/invitees/a5f6eeda-c65b-47fd-b370-56f5eef2a716\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Webhook Subscription",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.calendly.com/webhook_subscriptions/9a43248a-9bf3-42bc-b41c-0cfc6c37b303",
+					"protocol": "https",
+					"host": [
+						"api",
+						"calendly",
+						"com"
+					],
+					"path": [
+						"webhook_subscriptions",
+						"9a43248a-9bf3-42bc-b41c-0cfc6c37b303"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Webhook Subscription",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.calendly.com/webhook_subscriptions/1071a6db-264b-44fc-b5eb-5bb14ba6c7f5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"calendly",
+						"com"
+					],
+					"path": [
+						"webhook_subscriptions",
+						"1071a6db-264b-44fc-b5eb-5bb14ba6c7f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send data to Emovur CRM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"created_at\": \"2024-09-12T07:00:29.000000Z\",\n  \"created_by\": \"https://api.calendly.com/users/fd516150-d2e4-4fb7-a725-dea96cc87b25\",\n  \"event\": \"invitee.created\",\n  \"payload\": {\n    \"cancel_url\": \"https://calendly.com/cancellations/6ada9433-8da3-4611-9899-2833d393d695\",\n    \"created_at\": \"2024-09-12T07:00:28.486572Z\",\n    \"email\": \"shreyas@emovur.com\",\n    \"event\": \"https://api.calendly.com/scheduled_events/4aee52d4-2100-439e-8c02-5fd11fa634d7\",\n    \"first_name\": null,\n    \"invitee_scheduled_by\": null,\n    \"last_name\": null,\n    \"name\": \"Shreyas S\",\n    \"new_invitee\": null,\n    \"no_show\": null,\n    \"old_invitee\": null,\n    \"payment\": null,\n    \"questions_and_answers\": [\n      {\n        \"answer\": \"+91 90080 77061\",\n        \"position\": 0,\n        \"question\": \"Mobile Number\"\n      }\n    ],\n    \"reconfirmation\": null,\n    \"reschedule_url\": \"https://calendly.com/reschedulings/6ada9433-8da3-4611-9899-2833d393d695\",\n    \"rescheduled\": false,\n    \"routing_form_submission\": null,\n    \"scheduled_event\": {\n      \"created_at\": \"2024-09-12T07:00:28.468426Z\",\n      \"end_time\": \"2024-09-12T10:30:00.000000Z\",\n      \"event_guests\": [\n        {\n          \"created_at\": \"2024-09-12T07:00:28.525366Z\",\n          \"email\": \"kartik@emovur.com\",\n          \"updated_at\": \"2024-09-12T07:00:28.525366Z\"\n        },\n        {\n          \"created_at\": \"2024-09-12T07:00:28.522495Z\",\n          \"email\": \"prasanna@emovur.com\",\n          \"updated_at\": \"2024-09-12T07:00:28.522495Z\"\n        }\n      ],\n      \"event_memberships\": [\n        {\n          \"user\": \"https://api.calendly.com/users/fd516150-d2e4-4fb7-a725-dea96cc87b25\",\n          \"user_email\": \"whatsapp@emovur.com\",\n          \"user_name\": \"Emovur WhatsApp\"\n        }\n      ],\n      \"event_type\": \"https://api.calendly.com/event_types/caa61121-e91f-4d47-b782-c40e93fce6ea\",\n      \"invitees_counter\": {\n        \"total\": 1,\n        \"active\": 1,\n        \"limit\": 1\n      },\n      \"location\": {\n        \"join_url\": \"https://calendly.com/events/4aee52d4-2100-439e-8c02-5fd11fa634d7/google_meet\",\n        \"status\": \"processing\",\n        \"type\": \"google_conference\"\n      },\n      \"meeting_notes_html\": null,\n      \"meeting_notes_plain\": null,\n      \"name\": \"One on One WhatsApp API Live demo\",\n      \"start_time\": \"2024-09-12T10:00:00.000000Z\",\n      \"status\": \"active\",\n      \"updated_at\": \"2024-09-12T07:00:28.468426Z\",\n      \"uri\": \"https://api.calendly.com/scheduled_events/4aee52d4-2100-439e-8c02-5fd11fa634d7\"\n    },\n    \"scheduling_method\": null,\n    \"status\": \"active\",\n    \"text_reminder_number\": \"+91 90080 77061\",\n    \"timezone\": \"Asia/Calcutta\",\n    \"tracking\": {\n      \"utm_campaign\": null,\n      \"utm_source\": null,\n      \"utm_medium\": null,\n      \"utm_content\": null,\n      \"utm_term\": null,\n      \"salesforce_uuid\": null\n    },\n    \"updated_at\": \"2024-09-12T07:00:28.486572Z\",\n    \"uri\": \"https://api.calendly.com/scheduled_events/4aee52d4-2100-439e-8c02-5fd11fa634d7/invitees/6ada9433-8da3-4611-9899-2833d393d695\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5503/api/leads/calendly/0a7e627f-3255-4b57-bc41-306d43d9ce3b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5503",
+					"path": [
+						"api",
+						"leads",
+						"calendly",
+						"0a7e627f-3255-4b57-bc41-306d43d9ce3b"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All fields are filled",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"created_at\": \"2024-09-12T07:00:29.000000Z\",\n  \"created_by\": \"https://api.calendly.com/users/fd516150-d2e4-4fb7-a725-dea96cc87b25\",\n  \"event\": \"invitee.created\",\n  \"payload\": {\n    \"cancel_url\": \"https://calendly.com/cancellations/6ada9433-8da3-4611-9899-2833d393d695\",\n    \"created_at\": \"2024-09-12T07:00:28.486572Z\",\n    \"email\": \"shreyas@emovur.com\",\n    \"event\": \"https://api.calendly.com/scheduled_events/4aee52d4-2100-439e-8c02-5fd11fa634d7\",\n    \"first_name\": null,\n    \"invitee_scheduled_by\": null,\n    \"last_name\": null,\n    \"name\": \"Shreyas S\",\n    \"new_invitee\": null,\n    \"no_show\": null,\n    \"old_invitee\": null,\n    \"payment\": null,\n    \"questions_and_answers\": [\n      {\n        \"answer\": \"+91 90080 77061\",\n        \"position\": 0,\n        \"question\": \"Mobile Number\"\n      }\n    ],\n    \"reconfirmation\": null,\n    \"reschedule_url\": \"https://calendly.com/reschedulings/6ada9433-8da3-4611-9899-2833d393d695\",\n    \"rescheduled\": false,\n    \"routing_form_submission\": null,\n    \"scheduled_event\": {\n      \"created_at\": \"2024-09-12T07:00:28.468426Z\",\n      \"end_time\": \"2024-09-12T10:30:00.000000Z\",\n      \"event_guests\": [\n        {\n          \"created_at\": \"2024-09-12T07:00:28.525366Z\",\n          \"email\": \"kartik@emovur.com\",\n          \"updated_at\": \"2024-09-12T07:00:28.525366Z\"\n        },\n        {\n          \"created_at\": \"2024-09-12T07:00:28.522495Z\",\n          \"email\": \"prasanna@emovur.com\",\n          \"updated_at\": \"2024-09-12T07:00:28.522495Z\"\n        }\n      ],\n      \"event_memberships\": [\n        {\n          \"user\": \"https://api.calendly.com/users/fd516150-d2e4-4fb7-a725-dea96cc87b25\",\n          \"user_email\": \"whatsapp@emovur.com\",\n          \"user_name\": \"Emovur WhatsApp\"\n        }\n      ],\n      \"event_type\": \"https://api.calendly.com/event_types/caa61121-e91f-4d47-b782-c40e93fce6ea\",\n      \"invitees_counter\": {\n        \"total\": 1,\n        \"active\": 1,\n        \"limit\": 1\n      },\n      \"location\": {\n        \"join_url\": \"https://calendly.com/events/4aee52d4-2100-439e-8c02-5fd11fa634d7/google_meet\",\n        \"status\": \"processing\",\n        \"type\": \"google_conference\"\n      },\n      \"meeting_notes_html\": null,\n      \"meeting_notes_plain\": null,\n      \"name\": \"One on One WhatsApp API Live demo\",\n      \"start_time\": \"2024-09-12T10:00:00.000000Z\",\n      \"status\": \"active\",\n      \"updated_at\": \"2024-09-12T07:00:28.468426Z\",\n      \"uri\": \"https://api.calendly.com/scheduled_events/4aee52d4-2100-439e-8c02-5fd11fa634d7\"\n    },\n    \"scheduling_method\": null,\n    \"status\": \"active\",\n    \"text_reminder_number\": \"+91 90080 77061\",\n    \"timezone\": \"Asia/Calcutta\",\n    \"tracking\": {\n      \"utm_campaign\": null,\n      \"utm_source\": null,\n      \"utm_medium\": null,\n      \"utm_content\": null,\n      \"utm_term\": null,\n      \"salesforce_uuid\": null\n    },\n    \"updated_at\": \"2024-09-12T07:00:28.486572Z\",\n    \"uri\": \"https://api.calendly.com/scheduled_events/4aee52d4-2100-439e-8c02-5fd11fa634d7/invitees/6ada9433-8da3-4611-9899-2833d393d695\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5503/api/leads/calendly/68292d83-9458-4fa9-8440-8092e0a766ec",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5503",
+							"path": [
+								"api",
+								"leads",
+								"calendly",
+								"68292d83-9458-4fa9-8440-8092e0a766ec"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-7GSv74QBour1wb5+hRRq4eNDJmI\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Sep 2024 08:18:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Lead data saved successfully\"\n}"
+				},
+				{
+					"name": "Only required fields",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"created_at\": \"2024-09-12T08:24:22.000000Z\",\n  \"created_by\": \"https://api.calendly.com/users/fd516150-d2e4-4fb7-a725-dea96cc87b25\",\n  \"event\": \"invitee.created\",\n  \"payload\": {\n    \"cancel_url\": \"https://calendly.com/cancellations/fa25c397-2c4a-4adc-891c-c5881799543a\",\n    \"created_at\": \"2024-09-12T08:24:21.977788Z\",\n    \"email\": \"dinesh@emovur.com\",\n    \"event\": \"https://api.calendly.com/scheduled_events/2ec32cf0-010c-47b4-a77d-027136e84350\",\n    \"first_name\": null,\n    \"invitee_scheduled_by\": null,\n    \"last_name\": null,\n    \"name\": \"Dinesh Kumar\",\n    \"new_invitee\": null,\n    \"no_show\": null,\n    \"old_invitee\": null,\n    \"payment\": null,\n    \"questions_and_answers\": [\n      {\n        \"answer\": \"+91 81479 95077\",\n        \"position\": 0,\n        \"question\": \"Mobile Number\"\n      }\n    ],\n    \"reconfirmation\": null,\n    \"reschedule_url\": \"https://calendly.com/reschedulings/fa25c397-2c4a-4adc-891c-c5881799543a\",\n    \"rescheduled\": false,\n    \"routing_form_submission\": null,\n    \"scheduled_event\": {\n      \"created_at\": \"2024-09-12T08:24:21.960258Z\",\n      \"end_time\": \"2024-09-13T06:00:00.000000Z\",\n      \"event_guests\": [],\n      \"event_memberships\": [\n        {\n          \"user\": \"https://api.calendly.com/users/fd516150-d2e4-4fb7-a725-dea96cc87b25\",\n          \"user_email\": \"whatsapp@emovur.com\",\n          \"user_name\": \"Emovur WhatsApp\"\n        }\n      ],\n      \"event_type\": \"https://api.calendly.com/event_types/caa61121-e91f-4d47-b782-c40e93fce6ea\",\n      \"invitees_counter\": {\n        \"total\": 1,\n        \"active\": 1,\n        \"limit\": 1\n      },\n      \"location\": {\n        \"join_url\": \"https://calendly.com/events/2ec32cf0-010c-47b4-a77d-027136e84350/google_meet\",\n        \"status\": \"processing\",\n        \"type\": \"google_conference\"\n      },\n      \"meeting_notes_html\": null,\n      \"meeting_notes_plain\": null,\n      \"name\": \"One on One WhatsApp API Live demo\",\n      \"start_time\": \"2024-09-13T05:30:00.000000Z\",\n      \"status\": \"active\",\n      \"updated_at\": \"2024-09-12T08:24:21.960258Z\",\n      \"uri\": \"https://api.calendly.com/scheduled_events/2ec32cf0-010c-47b4-a77d-027136e84350\"\n    },\n    \"scheduling_method\": null,\n    \"status\": \"active\",\n    \"text_reminder_number\": null,\n    \"timezone\": \"Asia/Calcutta\",\n    \"tracking\": {\n      \"utm_campaign\": null,\n      \"utm_source\": null,\n      \"utm_medium\": null,\n      \"utm_content\": null,\n      \"utm_term\": null,\n      \"salesforce_uuid\": null\n    },\n    \"updated_at\": \"2024-09-12T08:24:21.977788Z\",\n    \"uri\": \"https://api.calendly.com/scheduled_events/2ec32cf0-010c-47b4-a77d-027136e84350/invitees/fa25c397-2c4a-4adc-891c-c5881799543a\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5503/api/leads/calendly/0a7e627f-3255-4b57-bc41-306d43d9ce3b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5503",
+							"path": [
+								"api",
+								"leads",
+								"calendly",
+								"0a7e627f-3255-4b57-bc41-306d43d9ce3b"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-7GSv74QBour1wb5+hRRq4eNDJmI\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Sep 2024 08:18:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Lead data saved successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:5503/api/leads/calendly/68292d83-9458-4fa9-8440-8092e0a766ec",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"created_at\": \"2024-09-20T06:00:29.000000Z\",\n  \"created_by\": \"https://api.calendly.com/users/fd516150-d2e4-4fb7-a725-dea96cc87b25\",\n  \"event\": \"invitee.created\",\n  \"payload\": {\n    \"cancel_url\": \"https://calendly.com/cancellations/6ada9433-8da3-4611-9899-2833d393d695\",\n    \"created_at\": \"2024-09-20T06:00:28.486572Z\",\n    \"email\": \"shreyas@emovur.com\",\n    \"event\": \"https://api.calendly.com/scheduled_events/4aee52d4-2100-439e-8c02-5fd11fa634d7\",\n    \"first_name\": null,\n    \"invitee_scheduled_by\": null,\n    \"last_name\": null,\n    \"name\": \"Shreyas S\",\n    \"new_invitee\": null,\n    \"no_show\": null,\n    \"old_invitee\": null,\n    \"payment\": null,\n    \"questions_and_answers\": [\n      {\n        \"answer\": \"+91 90080 77061\",\n        \"position\": 0,\n        \"question\": \"Mobile Number\"\n      }\n    ],\n    \"reconfirmation\": null,\n    \"reschedule_url\": \"https://calendly.com/reschedulings/6ada9433-8da3-4611-9899-2833d393d695\",\n    \"rescheduled\": false,\n    \"routing_form_submission\": null,\n    \"scheduled_event\": {\n      \"created_at\": \"2024-09-12T07:00:28.468426Z\",\n      \"end_time\": \"2024-09-12T10:30:00.000000Z\",\n      \"event_guests\": [\n        {\n          \"created_at\": \"2024-09-12T07:00:28.525366Z\",\n          \"email\": \"kartik@emovur.com\",\n          \"updated_at\": \"2024-09-12T07:00:28.525366Z\"\n        },\n        {\n          \"created_at\": \"2024-09-12T07:00:28.522495Z\",\n          \"email\": \"prasanna@emovur.com\",\n          \"updated_at\": \"2024-09-12T07:00:28.522495Z\"\n        }\n      ],\n      \"event_memberships\": [\n        {\n          \"user\": \"https://api.calendly.com/users/fd516150-d2e4-4fb7-a725-dea96cc87b25\",\n          \"user_email\": \"whatsapp@emovur.com\",\n          \"user_name\": \"Emovur WhatsApp\"\n        }\n      ],\n      \"event_type\": \"https://api.calendly.com/event_types/caa61121-e91f-4d47-b782-c40e93fce6ea\",\n      \"invitees_counter\": {\n        \"total\": 1,\n        \"active\": 1,\n        \"limit\": 1\n      },\n      \"location\": {\n        \"join_url\": \"https://calendly.com/events/4aee52d4-2100-439e-8c02-5fd11fa634d7/google_meet\",\n        \"status\": \"processing\",\n        \"type\": \"google_conference\"\n      },\n      \"meeting_notes_html\": null,\n      \"meeting_notes_plain\": null,\n      \"name\": \"One on One WhatsApp API Live demo\",\n      \"start_time\": \"2024-09-12T10:00:00.000000Z\",\n      \"status\": \"active\",\n      \"updated_at\": \"2024-09-12T07:00:28.468426Z\",\n      \"uri\": \"https://api.calendly.com/scheduled_events/4aee52d4-2100-439e-8c02-5fd11fa634d7\"\n    },\n    \"scheduling_method\": null,\n    \"status\": \"active\",\n    \"text_reminder_number\": \"+91 90080 77061\",\n    \"timezone\": \"Asia/Calcutta\",\n    \"tracking\": {\n      \"utm_campaign\": null,\n      \"utm_source\": null,\n      \"utm_medium\": null,\n      \"utm_content\": null,\n      \"utm_term\": null,\n      \"salesforce_uuid\": null\n    },\n    \"updated_at\": \"2024-09-12T07:00:28.486572Z\",\n    \"uri\": \"https://api.calendly.com/scheduled_events/4aee52d4-2100-439e-8c02-5fd11fa634d7/invitees/6ada9433-8da3-4611-9899-2833d393d695\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5503/api/leads/calendly/68292d83-9458-4fa9-8440-8092e0a766ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5503",
+					"path": [
+						"api",
+						"leads",
+						"calendly",
+						"68292d83-9458-4fa9-8440-8092e0a766ec"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{vault:authorization-secret}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
